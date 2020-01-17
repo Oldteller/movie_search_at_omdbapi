@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #212121;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.search-box{
+    position: relative;
+    top: 25%;
+    left: 35%;
+    background: #64B5F6;
+    height: 40px;
+    border-radius: 40px;
+    padding: 20px;
+    width: 500px;
+    margin-top: 25px;
+}
+
+input{
+    background: #81D4FA;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: antiquewhite;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 450px;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 15px ;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    display: table;
+}
+
+/* !*Clear floats after the columns *!*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
+    margin: 16px;
+    text-align: center;
+    background-color: #e57373;
+    box-sizing: border-box;
+    padding-left: 35%;
+
+}
+
+.column {
+    margin: 15px;
+    box-sizing: border-box;
+    background-color: #e57373;
+    float: left;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    overflow: hidden;
+    /*left: 0%;*/
+}
+
+.title{
+    font-size: 20px;
+}
+
+.type, .year{
+    font-size: 15px;
+}
+
+ legend{
+    font-weight: bold;
+    text-decoration: underline;
+     display: block;
+}
+
+.img-responsive{
+    /*width: 70%;*/
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 0 1.5%;
+    padding-right: 15px;
+}
+
+.image{
+    float: left;
+}
+
+.aside {
+    float: left;
+    overflow: hidden;
+}
+
+button{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.myButton {
+    box-shadow:inset 0 1px 0 0 #64b4f6;
+    background: #b3e5fc linear-gradient(to bottom, #b3e5fc 5%, #64b4f6 100%);
+    border-radius:6px;
+    border:1px solid #64b4f6;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0 1px 0 #03a8f4;
+}
+.myButton:hover {
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#64b4f6', endColorstr='#b3e5fc',GradientType=0);
+    background: #64b4f6 linear-gradient(to bottom, #64b4f6 5%, #b3e5fc 100%);
+}
+
+#details{
+    display: none;
+}
+
+/* Change Autocomplete styles in Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+    border: 1px solid #81D4FA;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0 1000px #81D4FA inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
